@@ -1,0 +1,10 @@
+<h1>Please choose</h1>
+<panel>
+    <h3 class="panel-heading">Types:</h3>
+    <ul>
+        
+        <li ng-repeat="(key,endpoint) in endpoints">
+            <a href="#/result/{{key}}">{{endpoint.title}}</a>
+        </li>
+    </ul>
+</panel>

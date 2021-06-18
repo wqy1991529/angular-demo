@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "demo"
+		},
+		{
+			"path": "C:\\angulardemo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demo",
+		"liveServer.settings.CustomBrowser": "chrome",
+		"liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+		"liveServer.settings.NoBrowser": false,
+		"liveServer.settings.root": "/",
+	}
+}

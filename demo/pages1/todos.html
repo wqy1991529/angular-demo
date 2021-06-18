@@ -1,0 +1,14 @@
+<div ng-controller="MyCtrl2">
+    <panel title="Todos"></panel>
+    <div>
+        <div class="container-fluid">
+            <input type="text"ng-model="newTodo">
+            <button ng-click="add()"><kpd>add</kpd></button>
+        </div>
+        <div ng-repeat="todo in todos">
+            <input type="checkbox"ng-model='todo.isChecked'>
+            <span >{{todo.name}}</span>
+        </div>
+        <button ng-click="del()">selected delete</button>
+        </div>
+</div>

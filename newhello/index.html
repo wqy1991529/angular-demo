@@ -1,0 +1,56 @@
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hallo AngularJS</title>
+        <style>
+                textarea{
+                    resize: none;
+                }
+        </style>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script type="text/javascript"src="app.js"></script>
+    </head>
+    <body class = "text-center">
+            <div ng-controller="MyCtrl" class="panel panel-default">
+                <h2 class="panel-heading">blog</h2>
+                <textarea  cols="30" rows="10"ng-model="message"></textarea>
+                <div class="panel-body">
+                    <button ng-click="save()">save</button>
+                    <button ng-click="read()">load</button>
+                    <button ng-click="remove()">delete</button>
+                </div> 
+                <p>text left: {{getCount()}}</p>
+                <div>-------------------------------------------</div>
+            </div>
+            <div ng-controller="MyCtrl2">
+                <h2>todo</h2>
+                <div >
+                    <input type="text"ng-model="newTodo">
+                    <button ng-click="add()">add</button>
+                </div>
+                <div ng-repeat="todo in todos">
+                    <input type="checkbox"ng-model='todo.isChecked'>
+                    <span >{{todo.name}}</span>
+                </div>
+                <button ng-click="del()">selected delete</button>
+            </div>
+            <div ng-controller="MyCtr3" class="alert alert-warning">
+                <h2>list</h2>
+                <ul>
+                    <li ng-repeat="member in members">
+                        <span>{{member}}</span>
+                    </li>
+                </ul>
+                <select class="form-control"ng-model="selected">
+                    <option value="hello">welt1</option>
+                    <option value="hello1">welt2</option>      
+                </select>
+                <input type="text" ng-model="selected">
+            </div><br><br>
+           <tutorial-panel></tutorial-panel>
+    </body>
+</html>

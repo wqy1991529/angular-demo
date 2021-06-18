@@ -1,0 +1,15 @@
+<panel panel-message="message" use-function="getCount(message)"><small> Writing here:{{message}}</small> </panel>
+<div class="panel-body">
+    <textarea  cols="30" rows="10" ng-model="message"></textarea>
+    <div class="alert" ng-hide="message.length!==100"> must be less than 100 characters</div>
+    <div class="panel-body">
+        <button ng-click="save()"class="text-primary">save</button>
+        <button ng-click="read()"class="text-primary">load</button> 
+        <button ng-click="remove()"class="text-danger">delete</button>
+      
+    </div> 
+    <h1 class="text-dark">text left:{{getCount()}}</h1>
+
+</div>
+
+    

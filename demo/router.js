@@ -1,0 +1,31 @@
+app.config(function($routeProvider){
+    $routeProvider
+        .when("/",{ 
+            templateUrl:"pages1/start1.html",
+            controller:"startController"
+        })
+        .when("/weather",{ 
+            templateUrl:"pages1/weather.html",
+            controller:"weatherController"
+        })
+        .when("/weatherhome",{ 
+            templateUrl:"pages1/weatherhome.html",
+            controller:"weatherhomeController"
+        })
+        .when("/results",{
+            templateUrl:"pages1/results.html",
+            controller: "MyCtrl"
+        })
+        .when("/result/:endpoint",{
+            templateUrl:"pages1/result.html",
+            controller:"resultController"
+        })
+        .when("/todos",{
+            templateUrl:"pages1/todos.html",
+            controller:"MyCtrl2"
+        })
+        
+        .otherwise({
+            redirect:"/"
+        })
+})

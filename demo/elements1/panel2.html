@@ -1,0 +1,6 @@
+<div class="panel panel-default">
+    <div class="panel-heading">{{convertToDate({a:panelMessage2.dt}) | date : dateFormat}}</div>
+    <div class="panel-body">Average of Temperature:{{convertToDc({b:panelMessage2.temp.day})}}</div>
+    <div class="panel-body">Min of Temperature:{{convertToDc({b:panelMessage2.temp.min})}}</div>
+    <div class="panel-body">Max of Temperature:{{convertToDc({b:panelMessage2.temp.max})}}</div>
+  </div>

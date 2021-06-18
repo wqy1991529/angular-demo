@@ -1,0 +1,23 @@
+<html ng-app="wang">
+    <head>
+        <meta charset="utf-8" />
+        <title>HPra</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+        <script type="text/javascript"src="PRA.js"></script>
+    </head>
+    <body>
+            <div ng-controller="w1">
+                <input type="text" ng-model="title">
+                <p>es besteht aus {{title | uppercase}} Buchstable.</p>
+                //realzing counter
+                <button ng-model="op" ng-click ="op=op+1">hier</button>
+                <p >{{op}}</p>
+            </div>
+            <div ng-controller="w2">
+                <input type="text">
+
+            </div>
+    </body>
+</html> 
